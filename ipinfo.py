@@ -4,6 +4,7 @@ import os
 import time
 import requests
 import json
+import sys
 
 threads = """
    ___ _______        ___ ______  _______ _______
@@ -82,5 +83,23 @@ class ip_info(object):
             ip_info()
 
 if __name__ == '__main__':
-    ip_info()
-    #feel me more :)
+    class version(object):
+        def __init__(self) -> None:
+            os.system("clear")
+            if sys.version_info.major == 3:
+                print()
+                ip_info()
+            elif sys.version_info.major == 2:
+                os.system("clear")
+                self.help = "usage => python ipinfo.py or python3 ipinfo.py"
+                import subprocess
+                subprocess.Popen(self.help, shell=True)
+                pass
+            else:
+                print()
+                print("\t This project is only support python")
+                time.sleep(2)
+                version()
+                pass
+            pass
+    version()
