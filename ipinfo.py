@@ -86,14 +86,14 @@ if __name__ == '__main__':
     class version(object):
         def __init__(self) -> None:
             os.system("clear")
-            if sys.version_info.major == 3:
+            if sys.version_info>(3,9):
                 print()
                 ip_info()
-            elif sys.version_info.major == 2:
+            elif sys.version_info<(3,9):
                 os.system("clear")
-                self.help = "usage => python ipinfo.py or python3 ipinfo.py"
-                import subprocess
-                subprocess.Popen(self.help, shell=True)
+                  sys.stderr.write(" your are too old python version!")
+                  sys.stderr.write(" Please upgrade lastest python version")
+                  sys.stderr.write(" contact admin : https://www.facebook.com/techabm")
                 pass
             else:
                 print()
