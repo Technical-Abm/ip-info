@@ -23,7 +23,7 @@ threads = """
 
 class ip_info(object):
     def __init__(self) -> None:
-        os.system("cls")
+        os.system("clear")
         print(threads)
         print(" [1] Get information own your ipaddress")
         print(" [2] Get information custom anyuser ipaddress")
