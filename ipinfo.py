@@ -91,13 +91,13 @@ if __name__ == '__main__':
                 ip_info()
             elif sys.version_info<(3,9):
                 os.system("clear")
-                sys.stderr.write(" your are too old python version!\n")
-                sys.stderr.write(" Please upgrade lastest python version\n")
-                sys.stderr.write(" contact admin : https://www.facebook.com/techabm\n")
+                sys.stderr.write(" your are too old python version!\n");time.sleep(1)
+                sys.stderr.write(" Please upgrade lastest python version\n");time.sleep(1)
+                sys.stderr.write(" contact admin : https://www.facebook.com/techabm\n");time.sleep(1)
                 pass
             else:
                 print()
-                print("\t This project is only support python")
+                print("\t This project is only support python3")
                 time.sleep(2)
                 version()
                 pass
