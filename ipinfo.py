@@ -91,9 +91,9 @@ if __name__ == '__main__':
                 ip_info()
             elif sys.version_info<(3,9):
                 os.system("clear")
-                sys.stderr.write(" your are too old python version!")
-                sys.stderr.write(" Please upgrade lastest python version")
-                sys.stderr.write(" contact admin : https://www.facebook.com/techabm")
+                sys.stderr.write(" your are too old python version!\n")
+                sys.stderr.write(" Please upgrade lastest python version\n")
+                sys.stderr.write(" contact admin : https://www.facebook.com/techabm\n")
                 pass
             else:
                 print()
